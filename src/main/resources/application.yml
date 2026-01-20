@@ -1,0 +1,10 @@
+spring:
+  application.name: creditcard-payment-service
+  datasource:
+    url: jdbc:h2:mem:paymentdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+  jpa.hibernate.ddl-auto: create-drop
+  h2.console.enabled: true
+server.port: 8084
+springdoc.swagger-ui.path: /swagger-ui.html
+management.endpoints.web.exposure.include: health,info
